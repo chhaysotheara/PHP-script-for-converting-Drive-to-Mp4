@@ -2,8 +2,8 @@
 error_reporting(0);
 include "curl_gd.php";
 
-	$url = $_GET['url'];
-	$linkdown = Drive($url);
+	$id = $_GET['id'];
+	$linkdown = Drive('https://drive.google.com/file/d/'.$id.'/view');
 ?>
 <!doctype html>
 <html lang="en">
